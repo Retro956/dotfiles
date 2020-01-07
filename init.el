@@ -77,6 +77,8 @@ There are two things you can do about this warning:
 
 ;; save files in different location
 (setq auto-save-file-name-transforms '((".*" "~/.emacs.d/autosaves/" t)))
+;; move backup files
+(setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
 
 ; start auto-complete with emacs
 (require 'auto-complete)
