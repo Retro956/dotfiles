@@ -1,5 +1,7 @@
 " Required At The Top For Assorted Plugins
 set nocompatible
+set hidden
+set noswapfile
 filetype off
 
 " Lightline Configurations
@@ -28,13 +30,13 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'preservim/nerdtree'
-" Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
 
 " My Configuration Changes
-" colo nachtleben
+colo nachtleben
 " let g:gruvbox_contrast_dark = 'hard'
 " colorscheme gruvbox
 syntax on
@@ -48,6 +50,10 @@ set omnifunc=syntaxcomplete#Complete
 set complete+=kspell
 set completeopt=menuone,longest
 set shortmess+=c
+set backspace=start,eol,indent
+let $RC="$HOME/.vimrc"
+let $RTP=split(&runtimepath, ',')[0]
+set path=.,**
 
 " Nerd Tree Config
 map <C-n> :NERDTreeToggle<CR>
