@@ -51,6 +51,11 @@ set complete+=kspell
 set completeopt=menuone,longest
 set shortmess+=c
 set backspace=start,eol,indent
+
+" Mappings
+:imap lkj <Esc>
+
+" Variables
 let $RC="$HOME/.vimrc"
 let $RTP=split(&runtimepath, ',')[0]
 set path=.,**
