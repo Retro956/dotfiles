@@ -53,7 +53,7 @@ set shortmess+=c
 set backspace=start,eol,indent
 
 " Mappings
-:imap lkj <Esc>
+imap kj <Esc>
 
 " Variables
 let $RC="$HOME/.vimrc"
