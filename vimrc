@@ -38,7 +38,7 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'preservim/nerdtree'
-Plugin 'ycm-core/YouCompleteMe'
+" Plugin 'ycm-core/YouCompleteMe'
 Plugin 'maxbane/vim-asm_ca65'
 
 call vundle#end()
