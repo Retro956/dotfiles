@@ -40,6 +40,7 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'preservim/nerdtree'
 " Plugin 'ycm-core/YouCompleteMe'
 Plugin 'maxbane/vim-asm_ca65'
+Plugin 'dhruvasagar/vim-table-mode'
 
 call vundle#end()
 filetype plugin indent on
@@ -77,14 +78,18 @@ map <C-n> :NERDTreeToggle<CR>
 let g:vim_markdown_folding_disabled = 1
 
 " Commands
-command! MakeTags !ctags -R .
+" command! MakeTags !ctags -R .
 
 " SNIPPETS
-nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>
-nnoremap ,cpp :-1read $HOME/.vim/.skeleton.cpp<CR>
-nnoremap ,py :-1read $HOME/.vim/.skeleton.py<CR>
-nnoremap ,lorem :-1read $HOME/.vim/.skeleton.lorem<CR>
-nnoremap ,rc :e $RC
+" nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>
+" nnoremap ,cpp :-1read $HOME/.vim/.skeleton.cpp<CR>
+" nnoremap ,py :-1read $HOME/.vim/.skeleton.py<CR>
+" nnoremap ,lorem :-1read $HOME/.vim/.skeleton.lorem<CR>
+" nnoremap ,rc :e $RC
 
 " YyouCompleteMe Requirements
 set encoding=utf-8
+
+" vim-table-mode
+" \tm to toggle table mode
+let b:table_mode_corner='+'
