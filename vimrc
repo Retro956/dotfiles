@@ -38,7 +38,7 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 Plugin 'preservim/nerdtree'
-" Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'maxbane/vim-asm_ca65'
 Plugin 'dhruvasagar/vim-table-mode'
 
@@ -76,16 +76,17 @@ map <C-n> :NERDTreeToggle<CR>
 " Vim-Mardown Configuration
 " Disable Folding
 let g:vim_markdown_folding_disabled = 1
+set conceallevel=2
 
 " Commands
-" command! MakeTags !ctags -R .
+command! MakeTags !ctags -R .
 
 " SNIPPETS
-" nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>
-" nnoremap ,cpp :-1read $HOME/.vim/.skeleton.cpp<CR>
-" nnoremap ,py :-1read $HOME/.vim/.skeleton.py<CR>
-" nnoremap ,lorem :-1read $HOME/.vim/.skeleton.lorem<CR>
-" nnoremap ,rc :e $RC
+nnoremap ,html :-1read $HOME/.vim/.skeleton.html<CR>
+nnoremap ,cpp :-1read $HOME/.vim/.skeleton.cpp<CR>
+nnoremap ,py :-1read $HOME/.vim/.skeleton.py<CR>
+nnoremap ,lorem :-1read $HOME/.vim/.skeleton.lorem<CR>
+nnoremap ,rc :e $RC
 
 " YyouCompleteMe Requirements
 set encoding=utf-8
